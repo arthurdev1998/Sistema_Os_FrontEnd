@@ -1,0 +1,36 @@
+<mat-drawer-container class="container" autosize>
+
+
+
+  <mat-drawer #drawer class="sidenav" mode="side">
+
+
+  <div *ngIf="drawer.toggle()">
+    <mat-nav-list>
+      <a mat-list-item routerLink="">
+        <i class="material-icons">home</i>
+        <span>Home</span>
+      </a>
+      <a mat-list-item routerLink="/">
+        <i class="material-icons">work</i>
+        <span>Técnico</span>
+      </a>
+      <a mat-list-item routerLink="/">
+        <i class="material-icons">person_search</i>
+        <span>Cliente</span>
+      </a>
+      <a mat-list-item routerLink="/">
+        <i class="material-icons">person_pin</i>
+        <span>Ordens de Serviço</span>
+      </a>
+
+      <router-outlet></router-outlet>
+
+    </mat-nav-list>
+  </div>
+
+  </mat-drawer>
+
+  <router-outlet></router-outlet>
+
+</mat-drawer-container>
