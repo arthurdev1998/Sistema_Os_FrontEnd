@@ -7,6 +7,13 @@ import { FormControl } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
+import {Component} from '@angular/core';
+import {MatCardModule} from '@angular/material/card';
+import {MatTableModule} from '@angular/material/table';
+import {MatPaginatorModule} from '@angular/material/paginator';
+
+
+
 
 
 
@@ -20,6 +27,7 @@ import { HeaderComponent } from './views/header/header.component';
 import { FooterComponent } from './views/footer/footer.component';
 import { SidnavComponent } from './views/sidnav/sidnav.component';
 import { HomeComponent } from './views/home/home.component';
+import { TecnicoReadComponent } from './tecnico-read/tecnico-read.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +35,8 @@ import { HomeComponent } from './views/home/home.component';
     HeaderComponent,
     FooterComponent,
     SidnavComponent,
-    HomeComponent
+    HomeComponent,
+    TecnicoReadComponent
 
   ],
   imports: [
@@ -38,6 +47,9 @@ import { HomeComponent } from './views/home/home.component';
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule,
+    MatCardModule,
+    MatTableModule,
+    MatPaginatorModule,
     MatListModule
 
 
