@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+
+
 import {MatToolbar, MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { FormControl } from '@angular/forms';
@@ -11,6 +13,9 @@ import {Component} from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button'
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 
 
@@ -28,6 +33,7 @@ import { FooterComponent } from './views/footer/footer.component';
 import { SidnavComponent } from './views/sidnav/sidnav.component';
 import { HomeComponent } from './views/home/home.component';
 import { TecnicoReadComponent } from './tecnico-read/tecnico-read.component';
+import { TecnicoCreateComponent } from './tecnico-create/tecnico-create.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +42,8 @@ import { TecnicoReadComponent } from './tecnico-read/tecnico-read.component';
     FooterComponent,
     SidnavComponent,
     HomeComponent,
-    TecnicoReadComponent
+    TecnicoReadComponent,
+    TecnicoCreateComponent
 
   ],
   imports: [
@@ -50,6 +57,9 @@ import { TecnicoReadComponent } from './tecnico-read/tecnico-read.component';
     MatCardModule,
     MatTableModule,
     MatPaginatorModule,
+    MatInputModule,
+    MatButtonModule,
+    MatSnackBarModule,
     MatListModule
 
 
