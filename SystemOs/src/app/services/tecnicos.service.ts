@@ -32,9 +32,9 @@ export class TecnicosService {
 
 message(msg:String){
   this.snack.open(`${msg}`, 'OK',{
-    horizontalPosition: 'end',
-    verticalPosition:'top',
-    duration: 3000
+    horizontalPosition: 'center',
+    verticalPosition:'bottom',
+    duration: 4500
   })
 }
 
