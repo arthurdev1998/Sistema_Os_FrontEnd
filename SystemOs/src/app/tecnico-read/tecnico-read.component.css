@@ -3,7 +3,9 @@
   justify-content: center;
 }
 
-
+a :hover{
+  cursor: pointer;
+}
 
 table{
 

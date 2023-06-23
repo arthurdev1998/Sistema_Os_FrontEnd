@@ -30,6 +30,25 @@ export class TecnicosService {
 
   }
 
+  updateTecnico(tecnico:Tecnico):Observable<Tecnico>{
+    const url = this.baseUrl + "/api/tecnico/" + tecnico.id
+    return this.http.put<Tecnico>(url,tecnico);
+  }
+
+  findById(id:any):Observable<Tecnico>{
+    const url = this.baseUrl + "/api/tecnico/" + id
+    return this.http.get<Tecnico>(url);
+  }
+
+  deleteTec(id:any):Observable<any>{
+    const url = this.baseUrl + "/api/tecnico/" + id
+    const obj = this.http.delete<Tecnico>(url);
+    console.log("olá")
+    console.log(obj);
+    return obj;
+  }
+
+
 message(msg:String){
   this.snack.open(`${msg}`, 'OK',{
     horizontalPosition: 'center',

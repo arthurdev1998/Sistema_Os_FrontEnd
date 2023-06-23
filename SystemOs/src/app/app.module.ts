@@ -36,6 +36,7 @@ import { SidnavComponent } from './views/sidnav/sidnav.component';
 import { HomeComponent } from './views/home/home.component';
 import { TecnicoReadComponent } from './tecnico-read/tecnico-read.component';
 import { TecnicoCreateComponent } from './tecnico-create/tecnico-create.component';
+import { TecnicoUpdateComponent } from './tecnico-update/tecnico-update.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { TecnicoCreateComponent } from './tecnico-create/tecnico-create.componen
     HomeComponent,
     TecnicoReadComponent,
     TecnicoCreateComponent,
+    TecnicoUpdateComponent,
 
   ],
   imports: [

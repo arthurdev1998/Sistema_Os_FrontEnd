@@ -57,17 +57,29 @@ export class TecnicoCreateComponent implements OnInit {
 }
 
 
-  errorValidForm(){
-    if(!this.nome.valid ){
-      return 'o nome deve ter entre 11 e 100 caracteres'
+  errorValidName(){
+    if(!this.nome.valid){
+      return "o nome deve ter entre 11 e 100 caracteres"
     }
-    if(!this.telefone.valid ){
-      return 'o telefone deve ter entre 11 e 13 caracteres'
+    else {
+      return false
     }
-    if(!this.cpf.valid ){
-      return 'o telefone deve ter 11 digitos'
-    }
-    return false;
   }
+    errorValidCpf(){
+      if(!this.cpf.valid){
+        return "o cpf deve ter entre 11 e 100 caracteres"
+      }
+      else {
+        return false
+      }
+    }
+      errorValidTelefone(){
+        if(!this.nome.valid){
+          return "o telefone deve ter entre 11 e 100 caracteres"
+        }
+        else {
+          return false
+        }
+      }
 
 }

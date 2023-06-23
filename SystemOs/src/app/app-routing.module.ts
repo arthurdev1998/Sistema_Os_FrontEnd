@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './views/home/home.component';
 import { TecnicoReadComponent } from './tecnico-read/tecnico-read.component';
 import { TecnicoCreateComponent } from './tecnico-create/tecnico-create.component';
+import { TecnicoUpdateComponent } from './tecnico-update/tecnico-update.component';
 
 const routes: Routes = [
    {
@@ -18,6 +19,11 @@ const routes: Routes = [
    {
     path:'tecnicos/create',
     component:  TecnicoCreateComponent
+   },
+
+   {
+    path:'tecnicos/update/:id',
+    component: TecnicoUpdateComponent
    }
 
 ];

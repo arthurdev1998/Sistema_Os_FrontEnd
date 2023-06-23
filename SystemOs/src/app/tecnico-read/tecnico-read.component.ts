@@ -41,15 +41,28 @@ export class TecnicoReadComponent implements AfterViewInit {
 findAll():void{
   this.service.findAll().subscribe((response) => {
     this.tecnicos = response;
-
-
   })
 }
-displayedColumns: string[] = ['id', 'nome', 'cpf', 'telefone'];
+
+deleteTecnico(element: any): any {
+  this.service.deleteTec(element.id).subscribe((response)=>{
+
+    if(response == null )
+    this.service.message("Tecnico cadastrado com sucesso")
+  }
+
+
+  )
+}
+
+
+
+displayedColumns: string[] = ['id', 'nome', 'cpf', 'telefone', 'actions'];
 
 public createTecnico (){
   this.router.navigate(['tecnicos/create']);
 }
+
 
 
 }
